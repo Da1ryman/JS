@@ -6,10 +6,12 @@
     <title>Document</title>
     <script>
       let username = prompt("Введите логин", "");
+
       if (username == "") {
         alert("Отмена");
       } else if (username == "Админ") {
         let password = prompt("Дай пароль гад", "");
+
         if (password == "Я главный") {
           alert("Салам биг босс");
         } else if (password == "") {
