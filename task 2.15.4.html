@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getDegree() {
+        let num = prompt("Введите число", "");
+        let degree = prompt("Введите степень числа", "");
+
+        if (degree < 0) {
+          return `Степень ${degree} не поддерживается, используйте натуральное число`;
+        } else {
+          return num ** degree;
+        }
+      }
+
+      alert(getDegree());
+    </script>
+  </head>
+  <body style="background-color: black; color: white; font-size: 20px">
+    <h1>Это код в решении, чей пизже?</h1>
+    <code
+      >function pow(x, n) {
+
+      <br />
+
+      let result = x;
+
+      <br />
+
+      for (let i = 1; i < n; i++) {
+
+      <br />
+
+      result *= x;
+
+      <br />
+
+      }
+
+      <br />
+
+      return result;
+
+      <br />
+
+      }
+
+      <br />
+
+      let x = prompt("x?", '');<br />
+      let n = prompt("n?", '');<br />
+
+      if (n >= 1 && n % 1 == 0) {<br />
+      alert( pow(x, n) );<br />
+      } else {<br />
+      alert(`Степень ${n} не поддерживается, используйте натуральное число`);<br />
+      }<br
+    /></code>
+  </body>
+</html>
+
+<!-- Функция pow(x,n)
+важность: 4
+Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.
+
+pow(3, 2) = 3 * 3 = 9
+pow(3, 3) = 3 * 3 * 3 = 27
+pow(1, 100) = 1 * 1 * ...* 1 = 1
+Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+
+Запустить демо
+
+P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше. -->
