@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
       function getAnswer(funct) {
-        if (funct) {
+        if (funct()) {
           alert("Доступ получен");
         } else {
           alert("Доступ запрещен");
@@ -27,8 +27,8 @@
         return age;
       }
 
-      getAnswer(checkAge());
-      getAnswer(checkAgeOr());
+      getAnswer(checkAge);
+      getAnswer(checkAgeOr);
     </script>
   </head>
   <body></body>
