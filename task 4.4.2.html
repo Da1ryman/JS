@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+    const calculator = {
+      a: 0,
+      b: 0,
+      operator: "",
+
+      read() {
+        this.a = +prompt("Введите первое число", "");
+        this.b = +prompt("Введите второе число", "");
+        this.operator = prompt(
+          "Введите операцию с числами (+, -, *, /, **)",
+          ""
+        );
+      },
+
+      calculate() {
+        switch (this.operator) {
+          case "+":
+            return this.a + this.b;
+          case "-":
+            return this.a - this.b;
+          case "*":
+            return this.a * this.b;
+          case "/":
+            return this.b !== 0 ? this.a / this.b : "Ошибка: деление на ноль";
+          case "**":
+            return this.a ** this.b;
+          default:
+            return "Неизвестная операция";
+        }
+      },
+    };
+
+    calculator.read();
+    alert(calculator.calculate());
+  </script>
+  <body></body>
+</html>
+
+<!-- Создайте объект calculator (калькулятор) с тремя методами=
+
+read() (читать) запрашивает два значения и сохраняет их как свойства объекта с именами a и b.
+sum() (суммировать) возвращает сумму сохранённых значений.
+mul() (умножить) перемножает сохранённые значения и возвращает результат.
+let calculator = {
+  // ... ваш код ...
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() ); -->
