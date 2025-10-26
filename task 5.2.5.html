@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let first = prompt("Базовый минимум", "");
+      let second = prompt("Роскошный максимум", "");
+      let num = 0;
+
+      function a(min, max) {
+        for (let i = 0; i <= max; i++) {
+          num += Math.round(Math.random());
+        }
+
+        return (num += Math.random());
+      }
+
+      alert(a(first, second));
+    </script>
+  </body>
+</html>
+
+<!-- Встроенный метод Math.random() возвращает случайное число
+ 
+от 0 (включительно) до 1 (но не включая 1)
+
+Напишите функцию random(min, max), 
+
+которая генерирует случайное число с плавающей точкой от min до max (но не включая max).
+
+Пример работы функции:
+
+alert( random(1, 5) ); // 1.2345623452
+alert( random(1, 5) ); // 3.7894332423
+alert( random(1, 5) ); // 4.3435234525 -->

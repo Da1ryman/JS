@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function readNumber() {
+        let a = prompt("Гони число", "");
+
+        if (isNaN(a)) {
+          alert("Миша все хуйня давай по новой");
+
+          return readNumber();
+        } else if (a === "" || a === null) {
+          alert("Спектакль окночен, не хэппи энд(((((");
+        } else {
+          alert(`Ватахеееееел `);
+        }
+      }
+
+      readNumber();
+    </script>
+  </body>
+</html>
+
+<!-- Создайте функцию readNumber, которая будет запрашивать ввод числового значения до тех пор, 
+пока посетитель его не введёт.
+Функция должна возвращать числовое значение.
+Также надо разрешить пользователю остановить процесс ввода, 
+отправив пустую строку или нажав «Отмена». В этом случае функция должна вернуть null. -->
